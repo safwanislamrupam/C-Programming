@@ -109,3 +109,4 @@ else{
 printf("The triangle is not valid\n");
 }
 return  0;
+}
