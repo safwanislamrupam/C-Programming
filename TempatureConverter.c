@@ -13,7 +13,7 @@ int main()
 
 
 }
-//Convert Temperature from Celcuis  from Fareheit
+//Convert Temperature  Celcuis  from Fareheit
 #include<stdio.h>
 int main()
 {
