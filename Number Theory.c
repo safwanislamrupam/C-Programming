@@ -245,3 +245,77 @@ int main() {
 
     return 0;
 }
+// find largest numer of 2 numbers
+#include <stdio.h>
+int main()
+{
+
+    int number1, number2;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &number1, &number2);
+    if (number1 > number2)
+    {
+        printf("%d is the largest number\n", number1);
+    }
+    else if (number2 > number1)
+    {
+        printf("%d is the largest number\n", number2);
+    }
+    else
+    {
+        printf("Both numbers are equal\n");
+    }
+    return 0;
+}
+
+//N factorial of the number .
+#include<stdio.h>
+int main()
+{
+int n,i,fact=1;
+printf("Enter any positive number : ");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++)
+
+{
+fact = fact * i;
+printf("%d\n",fact);
+
+}
+
+//Write a complete C program to find the temperature T from the following equation: PV= nRT. Where, P, V, n, Rrepresents pressure, volume, amount of substance and idealgas constant. R= 8.314 J/mol·K.
+#include<Stdio.h>
+int main()
+{
+float P,V , n , R, T;
+printf("Pressure=");
+scanf("%f",&P);
+printf("Volume=");
+scanf("%f",&V);
+printf("Amount of substance=");
+scanf("%f",&n);
+T=(P * V) / (n * 8.314);
+printf("temperature: %.3f\n",T);
+}
+
+//4.Write a C programme to quardtric equation ax^2 + bx + c = 0
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,x1,x2;
+printf(" a = ");
+scanf("%f",&a);
+printf(" b = ");
+scanf("%f",&b);
+printf(" c = ");
+scanf("%f",&c);
+x1 = (-b + sqrt(b * b - 4 * a * c))/ ( 2 * a );
+x2 = (-b - sqrt(b * b - 4 * a * c))/ ( 2 * a );
+printf("%f",x1,"\n");
+printf("%f",x2,"\n");
+
+}
+
