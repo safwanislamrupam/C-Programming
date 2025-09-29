@@ -36,3 +36,23 @@ int main()
 
 
 }
+
+
+
+//Unary Operator  
+#include<stdio.h>
+int main()
+{
+     int x  = 10;  
+    printf("%d\n",x++); //x=10  [this is the pre-increment]  
+     printf("%d\n",x; //x=11  
+     printf("%d\n",++x); //x=12  [this is the post-decrement]  
+     printf("%d\n",x); //x=12  
+     printf("%d\n",x--); //x=12 [this is the post-decrement]  
+     printf("%d\n",--x); //x=10 [this is the pre-decrement]  
+    
+    
+}
+
+
+//Relational Operator
