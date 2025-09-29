@@ -56,3 +56,52 @@ int main()
 
 
 //Relational Operator
+
+//// find largest numer of 3 numbers
+#include <stdio.h>
+int main()
+{
+
+    int number1, number2, number3;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &number1, &number2, &number3);
+    if (number1 > number2 && number1 > number3)
+    {
+        printf("%d is the largest number\n", number1);
+    }
+    else if (number2 > number1 && number2 > number3)
+    {
+        printf("%d is the largest number\n", number2);
+    }
+    else if (number3 > number1 && number3 > number2)
+    {
+        printf("%d is the largest number\n", number3);
+    }
+    else
+    {
+        printf("Both numbers are equal\n");
+    }
+    return 0;
+}
+
+
+//  // check a year is a leap year or not
+#include <stdio.h>
+int main()
+{
+
+    int year;
+    printf("Enter a year: ");
+    scanf("%d", &year);
+
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+    {
+        printf("%d is a leap year\n", year);
+    }
+    else
+    {
+        printf("%d is not a leap year\n", year);
+    }
+
+    return 0;
+}
