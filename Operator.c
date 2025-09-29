@@ -85,6 +85,73 @@ int main()
 }
 
 
+
+// check if the number is even or odd
+#include <stdio.h>
+int main()
+{
+
+    int number;
+    if (number % 2 == 0)
+    {
+        printf("%d is even", number);
+    }
+    else
+    {
+        printf("%d is odd", number);
+    }
+    return 0;
+}
+
+
+
+//Logical Operator
+//Check the consonant & vowel 
+#include<stdio.h>
+int main()
+{
+
+    char ch;  
+
+    printf("Enter any letter  = ");  
+    scanf("%c,&Ch);
+
+    if(ch==a || ch== e || ch== i || ch== o || ch== u ||
+        ch==A || ch==E || ch==I || ch==0 || ch==U ||                                               )
+        {
+
+          printf("Vowel");
+       
+    }
+          
+    else
+      printf("Consonant");
+
+}
+
+// find largest numer of 2 numbers
+#include <stdio.h>
+int main()
+{
+
+    int number1, number2;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &number1, &number2);
+    if (number1 > number2)
+    {
+        printf("%d is the largest number\n", number1);
+    }
+    else if (number2 > number1)
+    {
+        printf("%d is the largest number\n", number2);
+    }
+    else
+    {
+        printf("Both numbers are equal\n");
+    }
+    return 0;
+}
+
 //  // check a year is a leap year or not
 #include <stdio.h>
 int main()
@@ -105,19 +172,39 @@ int main()
 
     return 0;
 }
-// check if the number is even or odd
-#include <stdio.h>
+
+//#include<stdio.h>
 int main()
 {
+int mark;
+printf("Enter mark : ");
+scanf("%d",&mark);
 
-    int number;
-    if (number % 2 == 0)
-    {
-        printf("%d is even", number);
-    }
-    else
-    {
-        printf("%d is odd", number);
-    }
-    return 0;
+if(mark>100 || mark<0)
+printf("invalid mark");
+
+else if(mark>=80 && mark<=100)
+printf("A+ 4.0");
+else if(mark>=75 && mark<=79)
+printf("A 3.75");
+else if(mark>=70 && mark<=74)
+printf("A- 3.5");
+else if(mark>=65 && mark<=69)
+printf("B+ 3.25");
+else if(mark>=64 && mark<=60)
+printf("B 3.00");
+else if(mark>=59 && mark<=55)
+
+printf("B- 2.75 ");
+
+else if(mark>=54 && mark<=50)
+printf("C+ 2.50 ");
+
+else if(mark>=49 && mark<=45)
+printf("C 2.25 ");
+
+else if(mark>=44 && mark<=40)
+printf("D 2.00");
+else
+printf("F 0”);
 }
