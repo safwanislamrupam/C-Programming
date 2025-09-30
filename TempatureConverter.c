@@ -84,5 +84,46 @@ int main()
 }
 
 
+//Using menubased Temperature Converter
+#include<stdio.h>
+int main()
+{
+     int choice;
+     float temp,convertedTemp;
+     printf("Temperature Conversion menu\n");  
+     printf("1.Farenheit to Celcuis\n");
+     printf("2.Celcuis to Farenheit\n");
+     printf("Enter your choice");
+     scanf("%d",&choice);
 
+     switch (choice)
+     {
+         case 01:  
+         {
+            printf("Enter the Farenheit Temperature : ");
+            scanf("%f",&temp);
+            convertedTemp = (temp-32) /1.8; 
+            printf("The Temperature in  celsius is  :%f\n",convertedTemp);
+            break;
+
+        }
+        
+         case 02:  
+         {
+            printf("Enter the Celcuis Temperature : ");
+            scanf("%f",&temp);
+            convertedTemp = (1.8*temp) + 32;
+            printf("The Temperature in  Farenheit is  :%f\n",convertedTemp);
+            break;
+            
+        }
+             default:
+             printf("Not a Correct Option");
+             break;
+
+     }
+     
+
+
+}
 
