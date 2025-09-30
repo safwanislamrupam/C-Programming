@@ -286,3 +286,60 @@ int main()
    
 
 }
+
+//To check the letter vowel or consonant  
+#include<stdio.h>
+int main()
+{
+    char ch;  
+    printf("Enter any letter  :  ");
+    scanf("%c",&ch);
+
+    switch (ch)
+    {
+    case 'a':
+        printf("Vowel\n");
+        break;
+     
+     case 'e':
+        printf("Vowel\n");
+        break;
+
+        case 'i':
+        printf("Vowel\n");
+        break;
+        case 'o':
+        printf("Vowel\n");
+        break;
+        case 'u':
+        printf("Vowel\n");
+        break;
+
+         case 'A':
+        printf("Consonant\n");
+        break;
+     
+     case 'E':
+        printf("Consonant\n");
+        break;
+
+        case 'I':
+        printf("Consonant\n");
+        break;
+        case 'O':
+        printf("Consonant\n");
+        break;
+        case 'U':
+        printf("Consonant\n");
+        break;
+
+
+
+    default:
+         printf("Invalid Letter");
+         break;
+    }
+
+
+
+}
