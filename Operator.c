@@ -17,6 +17,49 @@ int main()
     printf("%d * %d = %d\n",a,b,mul);
 
 }
+//Using Switch Case
+#include<stdio.h> 
+int main()
+{
+    int num1,num2; 
+    char oper; 
+
+    
+    printf("Enter an Operator (+,-,*,/) : ");
+    scanf("%c",&oper);
+
+
+    printf("Enter num1 : " );  
+    scanf("%d",&num1);  
+
+    printf("Enter num2 : " );  
+    scanf("%d",&num2);  
+
+ 
+   switch(oper)
+   {
+
+       case '+':
+       printf("%d + %d :%d\n",num1,num2,num1+num2);
+
+       
+       case '-':
+       printf("%d - %d :%d\n",num1,num2,num1-num2);
+
+       
+       case '*':
+       printf("%d * %d :%d\n",num1,num2,num1*num2);
+
+       
+       case '/':
+       printf("%d / %d :%d\n",num1,num2,num1/num2);
+
+
+
+   }
+
+
+}
 //Assignment Opearator  
 #include<stdio.h>
 int main()
