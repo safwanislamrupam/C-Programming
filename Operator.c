@@ -252,6 +252,37 @@ int main()
        
     
 
+}
 
+
+//To check the digit spell
+#include<stdio.h>
+int main()
+{
+
+    int digit;  
+    printf("Enter any digit  = "); 
+    scanf("%d",&digit);  
+
+    switch(digit)
+    {
+
+       case 0:
+              printf("Zero\n");  
+    
+       case 1:  
+           printf("One\n");
+       case 2: 
+            printf("Two\n");
+       case 3:  
+            printf("Three\n");
+         default:  
+     printf("not a valid number");
+
+
+
+    }
+
+   
 
 }
