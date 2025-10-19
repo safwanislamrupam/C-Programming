@@ -97,3 +97,109 @@ int main()
 
     return 0;
 }
+
+//Insert a value in an array implementation
+#include<stdio.h> 
+int main()
+{
+     int n; 
+     scanf("%d",&n);  
+     int a[n+1];  
+     for(int i  =0; i<n; i++)
+     {
+        scanf("%d",&a[i]);  
+     }
+       int idx,val; 
+       scanf("%d %d",&idx,&val); 
+      
+      for(int i = n; i >= idx+1; i--)
+      {
+        a[i] = a[i-1];  
+      }
+       a[idx] = val; 
+
+       for(int i =0;i<=n;i++)
+       {
+           printf("%d ",a[i]);
+
+
+       }
+
+}
+
+//Removing a value in an array idea
+#include<stdio.h>  
+int main()
+{
+
+     int n; 
+     scanf("%d",&n);  
+     int a[n];
+     for(int i=0; i<n;i++)
+     {
+          scanf("%d",&a[i]);
+
+     }
+
+     int idx;  
+     scanf("%d",&idx); 
+     
+     for(int i=idx; i<n-1;i++)
+    {
+      a[i] = a[i+1];
+    } 
+    n--;
+    for(int i=0; i<n-1;i++)
+    {
+        printf("%d ",a[i]);
+    }
+       return 0;
+
+}
+
+//Swapping Array 
+#include<stdio.h>
+int main()
+{
+    int a =10; 
+    int b  =20;  
+   int temp = a;
+    a= b; 
+    b = temp;
+
+     printf("A = %d\nB = %d",a,b);
+
+
+}
+
+//Reverse array  
+#include<stdio.h> 
+int main()
+{
+    int n;  
+    scanf("%d",&n);  
+    int a[n];  
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    int i = 0;  
+    int j = n - 1;  
+    while (i < j)
+    {
+        int temp = a[i];  
+        a[i] = a [j]; 
+        a[j] = temp;  
+        i++;  
+        j--;  
+
+    }
+
+    for(int i=0;i<n;i++)
+    {
+        printf("%d ",a[i]);
+    }
+
+
+}
